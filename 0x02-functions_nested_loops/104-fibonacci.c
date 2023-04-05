@@ -25,7 +25,7 @@ int main(void)
 	f2_hf1 = f2 / 10000000000;
 	f1_hf2 = f1 % 10000000000;
 	f2_hf2 = f2 % 10000000000;
-	for (count = 93; count < 99; count++)
+	for (c = 93; c < 99; c++)
 	{
 	hf1 = f1_hf1 + f2_hf1;
 	hf2 = f1_hf2 + f2_hf2;
@@ -35,7 +35,7 @@ int main(void)
 	hf2 %= 10000000000;
 	}
 	printf("%lu%lu", hf1, hf2);
-	if (count != 98)
+	if (c != 98)
 	print(", ");
 	f1_hf1 = f2_hf1;
 	f1_hf2 = f2_hf2;
