@@ -11,13 +11,13 @@ int main(void)
 {
 	int c;
 	unsigned long f1 = 0, f2 = 1, sum;
-	unsigned long f1_hf1, f1hf2, f2_hf1, f2_hf2;
+	unsigned long f1_hf1, f1_hf2, f2_hf1, f2_hf2;
 	unsigned long hf1, hf2;
 
 	for (c = 0; c < 92; c++)
 	{
 	sum = f1 + f2;
-	print("%lu, ", sum);
+	printf("%lu, ", sum);
 	f1 = f2;
 	f2 = sum;
 	}
@@ -36,7 +36,7 @@ int main(void)
 	}
 	printf("%lu%lu", hf1, hf2);
 	if (c != 98)
-	print(", ");
+	printf(", ");
 	f1_hf1 = f2_hf1;
 	f1_hf2 = f2_hf2;
 	f2_hf1 = hf1;
